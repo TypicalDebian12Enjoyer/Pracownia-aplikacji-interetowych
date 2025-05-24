@@ -1,3 +1,5 @@
+#ifndef POLE_H
+#define POLE_H
 #include <iostream>
 
 class Prostokacik{
@@ -10,3 +12,5 @@ public:
 	void wyswietl_wynik();
 	~Prostokacik();
 };
+
+#endif //WYBOR_H
