@@ -1,9 +1,9 @@
 #include "pole.h"
 
 Prostokacik::Prostokacik(){
-	a = nullptr;
-	b = nullptr;
-	P = nullptr;
+	a = new double;
+	b = new double;
+	P = new double;
 }
 
 void Prostokacik::czytaj_dane(){
@@ -18,7 +18,7 @@ void Prostokacik::przetworz_dane(){
 }
 
 void Prostokacik::wyswietl_wynik(){
-	std::cout << "Pole prostokąta o boku a = " << *a << " i boku b = " << *b << " wynosi " << *P;
+	std::cout << "Pole prostokąta o boku a = " << *a << " i boku b = " << *b << " wynosi " << *P << std::endl;
 }
 
 Prostokacik::~Prostokacik(){
