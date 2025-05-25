@@ -7,6 +7,7 @@ Prostokacik::Prostokacik(){
 }
 
 void Prostokacik::czytaj_dane(){
+	std::cout << "Program oblicza pole prostokąta" << std::endl;
 	std::cout << "Podaj bok a." << std::endl;
 	std::cin >> *a;
 	std::cout << "Podaj bok b." << std::endl;
