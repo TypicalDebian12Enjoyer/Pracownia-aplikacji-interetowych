@@ -2,6 +2,7 @@
 #include "pole.h"
 #include "pierwiastki.h"
 #include "tablica.h"
+#include "sortowanie.h"
 
 void wybor(){
 	char wybor = '0';
@@ -9,7 +10,7 @@ void wybor(){
 	std::cout << "[1] Pole prostokąta\n";
 	std::cout << "[2] Pierwiastki trójmianu\n";
 	std::cout << "[3] Macierz\n";
-	//Miejsce na następne funckje
+	std::cout << "[4] Sortowanie\n";
 	std::cout << "[W] Wyjście z programu\n";
 	std::cout << "Co wybierasz?\n";
 	std::cin >> wybor;
@@ -19,6 +20,7 @@ void wybor(){
 	Prostokacik Krajewski;
 	Trojmianek Bartus;
 	Macierzyk Janas;
+	Sortowaneczko Szymus;
 
 	switch(wybor){
 		case '1':
@@ -40,11 +42,18 @@ void wybor(){
 			Janas.przetworz_dane();
 			Janas.wyswietl_wynik();
 
+			wybor_po_zadaniu();
+			break;
+		case '4':
+			Szymus.czytaj_dane();
+			Szymus.przetworz_dane();
+			Szymus.wyswietl_dane();
+
 			wybor_po_zadaniu();	
+			break;	
 		case 'W':
 			return;
 		default:
-			std::cout << "Z****e";
 			break;
 	}
 }

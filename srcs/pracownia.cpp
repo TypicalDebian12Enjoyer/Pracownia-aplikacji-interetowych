@@ -1,6 +1,8 @@
 #include "funkcyjki.h"
 
 int main(){
+	srand(time(NULL));
+
 	/* sprawdzenie zadania 1.
 	Prostokacik Krajewski;
 	Krajewski.czytaj_dane();

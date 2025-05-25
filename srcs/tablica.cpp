@@ -3,8 +3,6 @@
 Macierzyk::Macierzyk() : macierzyk() {}
 
 void Macierzyk::czytaj_dane(){
-	srand(time(NULL));
-
 	for(int i = 0; i < 10; i++){
 		macierzyk[i][i] = 1 + rand() % 9;
 	}
