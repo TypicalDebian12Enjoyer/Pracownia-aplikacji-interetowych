@@ -14,9 +14,9 @@ void wybor(){
 	std::cout << "[W] Wyjście z programu\n";
 	std::cout << "Co wybierasz?\n";
 	std::cin >> wybor;
-	std::cout << std::endl;
+	std::cout << "\n";
 
-	//Tutaj lista obiektów potrzebna do switcha bo okazuje się że nie można w caseach w switchu inicjować ani nowych obiektów ani zmiennych :) Kocham switcha
+	//Tutaj lista obiektów potrzebna do switcha bo okazuje się że nie można w caseach w switchu inicjować ani nowych obiektów ani zmiennych :) Kocham switcha :)
 	Prostokacik Krajewski;
 	Trojmianek Bartus;
 	Macierzyk Janas;
@@ -60,9 +60,9 @@ void wybor(){
 
 void wybor_po_zadaniu(){
 	char wyborek = '0';
-	std::cout << std::endl << "[1] Powrót do menu głównego" << std::endl;
-	std::cout << "[W] Wyjście z programu" << std::endl;
-	std::cout << "Co wybierasz?" << std::endl;
+	std::cout << std::endl << "[1] Powrót do menu głównego\n";
+	std::cout << "[W] Wyjście z programu\n";
+	std::cout << "Co wybierasz?\n";
 	std::cin >> wyborek;
 
 	if(wyborek == '1'){
