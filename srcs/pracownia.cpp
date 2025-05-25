@@ -1,7 +1,7 @@
 #include "funkcyjki.h"
 
 int main(){
-	srand(time(NULL));
+	srand(time(NULL)); //Ziarno
 
 	/* sprawdzenie zadania 1.
 	Prostokacik Krajewski;
@@ -10,10 +10,10 @@ int main(){
 	Krajewski.wyswietl_wynik();
 	*/
 
-	std::cout << "Igor, Puścion, 2G" << std::endl;
-	std::cout << "Technikum Elektroniczne nr 3 w Warszawie" << std::endl;
-	std::cout << "Pm5" << std::endl;
+	std::cout << "Igor, Puścion, 2G\n";
+	std::cout << "Technikum Elektroniczne nr 3 w Warszawie\n";
+	std::cout << "Pm5\n";
 
-	wybor();
+	wybor(); //Wywołanie menu głównego
 	return 0;
 }

@@ -1,8 +1,6 @@
 #include "pierwiastki.h"
 
-Trojmianek::Trojmianek(){
-	prec = 2;
-}
+Trojmianek::Trojmianek(){}
 
 void Trojmianek::czytaj_dane(){
 	std::cout << "Program oblicza pierwiastki równania kwadratowego dla dowolnych współczynników a, b, c." << std::endl;
@@ -27,7 +25,7 @@ void Trojmianek::przetworz_dane(){
 	x1 = ((-1 * b) + sqrt(delta)) / (2 * a);
 	x2 = ((-1 * b) - sqrt(delta)) / (2 * a);
 
-	if(x1 > x2){
+	if(x1 > x2){ //Ustawiam pierwiatki w kolejności rosnącej tak aby było estetycznie
 		double temp = 0;
 		temp = x1;
 		x1 = x2;

@@ -1,3 +1,5 @@
+#Wzór Makefile napisany przez Igor Puścion zamieszony pod licencją GPL v3.0
+
 SRCS = $(shell find srcs -name "*.cpp")
 OBJS = $(patsubst srcs/%.cpp, build/obj/%.o, $(SRCS))
 DEPS = $(patsubst srcs/%.cpp, build/dep/%.d, $(SRCS))

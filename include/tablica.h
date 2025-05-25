@@ -4,7 +4,7 @@
 #include <cstdlib>
 #include <ctime>
 
-class Macierzyk{
+class Macierzyk{ //Macierz z ang. matrix
 private:
 	int macierzyk[10][10];
 public:

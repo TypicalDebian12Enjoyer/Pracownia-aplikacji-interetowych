@@ -1,12 +1,9 @@
 #include "funkcyjki.h"
-#include "pole.h"
-#include "pierwiastki.h"
-#include "tablica.h"
-#include "sortowanie.h"
 
-void wybor(){
+void wybor(){ //Funkcja obsługująca menu główne
 	char wybor = '0';
 
+	//W połowie projektu przypomniałem sobie że coś takiego jak \n istnieje i się skapłem jakie to jest przyjemne i wszedzie zmieniłem :3 bo załkiem estetycznie i schludnie to w kodzie wygląda
 	std::cout << "[1] Pole prostokąta\n";
 	std::cout << "[2] Pierwiastki trójmianu\n";
 	std::cout << "[3] Macierz\n";
@@ -21,6 +18,7 @@ void wybor(){
 	Trojmianek Bartus;
 	Macierzyk Janas;
 	Sortowaneczko Szymus;
+	//Oczywiście nazwy obiektów przypadkowe
 
 	switch(wybor){
 		case '1':
@@ -52,23 +50,27 @@ void wybor(){
 			wybor_po_zadaniu();	
 			break;	
 		case 'W':
+			std::cout << "Bye\n";
 			return;
 		default:
 			break;
+
+	//Tak po prawdzie to nigdzie tu nie musaiłbym breaka dodawać bo nie ma takiego przypadku żeby on musiał zadziałać ale wygląda to na dobrą praktykę
 	}
 }
 
-void wybor_po_zadaniu(){
-	char wyborek = '0';
+void wybor_po_zadaniu(){ //Funkcja obsługująca podmenu główne po zakończeniu jakiegoś zadania
+	char wyborek = '0'; //Inicjalizacja nowych zmiennych do dobra praktyka 🤓☝
 	std::cout << std::endl << "[1] Powrót do menu głównego\n";
 	std::cout << "[W] Wyjście z programu\n";
 	std::cout << "Co wybierasz?\n";
 	std::cin >> wyborek;
 
 	if(wyborek == '1'){
-		wybor();
+		wybor(); //Powrót do głównego menu
 	}
 	else{
+		std::cout << "Bye\n";
 		return;
 	}
 }

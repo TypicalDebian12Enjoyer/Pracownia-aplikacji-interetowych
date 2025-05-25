@@ -4,12 +4,12 @@ Sortowaneczko::Sortowaneczko(){}
 
 void Sortowaneczko::czytaj_dane(){
 	for(int i = 0; i < n; i++){
-		tablicunia[i] = -1000 + rand() % 2001;
-		pokazowka[i] = tablicunia[i];
+		tablicunia[i] = -1000 + rand() % 2001; //Przedział wybrałem mniej więcej taki jakie liczby są pokazane w przykładzie
+		pokazowka[i] = tablicunia[i]; //Kopiujemy nieposortowaną tablicę
 	}
 }
 
-void Sortowaneczko::przetworz_dane(){
+void Sortowaneczko::przetworz_dane(){ //Kochany bubble sort
 	for(int i = 0; i < n; i++){
 		
 		bool podmieniony = false;
@@ -39,6 +39,7 @@ void Sortowaneczko::wyswietl_dane(){
 	for(int j = 0; j < n; j++){
 		std::cout << tablicunia[j] << " ";
 	}
+	std::cout << "\n";
 }
 
 Sortowaneczko::~Sortowaneczko(){}

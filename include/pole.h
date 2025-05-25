@@ -1,10 +1,11 @@
-#ifndef POLE_H
-#define POLE_H
+#ifndef PROSTOKACIK_H
+#define PROSTOKACIK_H
 #include <iostream>
+#include <iomanip> //Użyłem tego do setprecision bo wydaje mi się że oto chodziło w "Dla tych trzech zmiennych należy przyjąć format wyświetlania ich na ekranie z dwoma miejscami po kropce."
 
 class Prostokacik{
 private:
-	double  *a, *b, *P;
+	double  *a, *b, *P; //Użyłem wskaźników dla dodatkowej zabawy
 public:
 	Prostokacik();
 	void czytaj_dane();
@@ -13,4 +14,4 @@ public:
 	~Prostokacik();
 };
 
-#endif //WYBOR_H
+#endif //PROSTOKACIK_H

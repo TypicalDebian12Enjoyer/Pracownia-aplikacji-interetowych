@@ -19,7 +19,7 @@ void Prostokacik::przetworz_dane(){
 }
 
 void Prostokacik::wyswietl_wynik(){
-	std::cout << "Pole prostokąta o boku a = " << *a << " i boku b = " << *b << " wynosi " << *P << std::endl;
+	std::cout << std::setprecision(3) << "Pole prostokąta o boku a = " << *a << " i boku b = " << *b << " wynosi " << *P << std::endl;
 }
 
 Prostokacik::~Prostokacik(){
