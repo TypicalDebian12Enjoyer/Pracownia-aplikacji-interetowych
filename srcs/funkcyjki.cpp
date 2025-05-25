@@ -1,21 +1,24 @@
 #include "funkcyjki.h"
 #include "pole.h"
 #include "pierwiastki.h"
+#include "tablica.h"
 
 void wybor(){
 	char wybor = '0';
 
-	std::cout << "[1] Pole prostokąta" << std::endl;
+	std::cout << "[1] Pole prostokąta\n";
 	std::cout << "[2] Pierwiastki trójmianu\n";
+	std::cout << "[3] Macierz\n";
 	//Miejsce na następne funckje
-	std::cout << "[W] Wyjście z programu" << std::endl;
-	std::cout << "Co wybierasz?" << std::endl;
+	std::cout << "[W] Wyjście z programu\n";
+	std::cout << "Co wybierasz?\n";
 	std::cin >> wybor;
 	std::cout << std::endl;
 
 	//Tutaj lista obiektów potrzebna do switcha bo okazuje się że nie można w caseach w switchu inicjować ani nowych obiektów ani zmiennych :) Kocham switcha
 	Prostokacik Krajewski;
 	Trojmianek Bartus;
+	Macierzyk Janas;
 
 	switch(wybor){
 		case '1':
@@ -31,6 +34,13 @@ void wybor(){
 			Bartus.wyswietl_wynik();
 
 			wybor_po_zadaniu();
+			break;
+		case '3':
+			Janas.czytaj_dane();
+			Janas.przetworz_dane();
+			Janas.wyswietl_wynik();
+
+			wybor_po_zadaniu();	
 		case 'W':
 			return;
 		default:
